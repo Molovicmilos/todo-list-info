@@ -1,7 +1,7 @@
 {
-	"name": "todo-list",
+	"name": "todo-list-info",
 	"version": "0.1.0",
-	"description": "Todo list",
+	"description": "Todo List Info",
 	"author": "Molke",
 	"license": "GPL-2.0-or-later",
 	"main": "build/index.js",

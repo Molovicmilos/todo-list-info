@@ -21,5 +21,5 @@
  */
 
 /* eslint-disable no-console */
-console.log( 'Hello World! (from todo list block)' );
+console.log( 'Hello World! (from todo list info block)' );
 /* eslint-enable no-console */

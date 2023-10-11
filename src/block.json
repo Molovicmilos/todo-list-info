@@ -1,16 +1,16 @@
 {
 	"$schema": "https://schemas.wp.org/trunk/block.json",
 	"apiVersion": 3,
-	"name": "blocks-u/todo-list",
+	"name": "blocks-u/todo-list-info",
 	"version": "0.1.0",
-	"title": "Todo List",
+	"title": "Todo List Info",
 	"category": "blocks-u",
-	"icon": "editor-ul",
-	"description": "Display an edit todos in the data store",
+	"icon": "info-outline",
+	"description": "Information about the todo list in the data store",
 	"supports": {
 		"html": false
 	},
-	"textdomain": "todo-list",
+	"textdomain": "todo-list-info",
 	"editorScript": "file:./index.js",
 	"editorStyle": "file:./index.css",
 	"style": "file:./style-index.css",

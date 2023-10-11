@@ -2,5 +2,5 @@
 import { useBlockProps } from '@wordpress/block-editor';
 
 export default function save() {
-	return <div { ...useBlockProps.save() }>Saved todo list</div>;
+	return <div { ...useBlockProps.save() }>Saved todo list info</div>;
 }

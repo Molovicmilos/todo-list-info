@@ -8,5 +8,5 @@ export default function Edit() {
 		return select( 'core/editor' ).getEditedPostAttribute( 'title' );
 	} );
 	const { editPost } = useDispatch( 'core/editor' ); */
-	return <div { ...useBlockProps() }>Todo list</div>;
+	return <div { ...useBlockProps() }>Todo list Info</div>;
 }
