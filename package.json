@@ -1,7 +1,7 @@
 {
-	"name": "data-store-demo",
+	"name": "todo-list",
 	"version": "0.1.0",
-	"description": "Data store usage",
+	"description": "Todo list",
 	"author": "Molke",
 	"license": "GPL-2.0-or-later",
 	"main": "build/index.js",

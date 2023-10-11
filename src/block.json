@@ -1,16 +1,16 @@
 {
 	"$schema": "https://schemas.wp.org/trunk/block.json",
 	"apiVersion": 3,
-	"name": "blocks-u/data-store-demo",
+	"name": "blocks-u/todo-list",
 	"version": "0.1.0",
-	"title": "Data Store Demo",
+	"title": "Todo List",
 	"category": "blocks-u",
-	"icon": "database",
-	"description": "Example of retrieving information and dispatching actions to the block editor's data store",
+	"icon": "editor-ul",
+	"description": "Display an edit todos in the data store",
 	"supports": {
 		"html": false
 	},
-	"textdomain": "data-store-demo",
+	"textdomain": "todo-list",
 	"editorScript": "file:./index.js",
 	"editorStyle": "file:./index.css",
 	"style": "file:./style-index.css",

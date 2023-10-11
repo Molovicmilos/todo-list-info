@@ -26,7 +26,7 @@ var __webpack_exports__ = {};
  */
 
 /* eslint-disable no-console */
-console.log('Hello World! (from data usage demo block)');
+console.log('Hello World! (from todo list block)');
 /* eslint-enable no-console */
 /******/ })()
 ;
