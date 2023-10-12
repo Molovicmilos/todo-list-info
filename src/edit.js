@@ -1,12 +1,41 @@
-//import { __ } from '@wordpress/i18n';
+import { __ } from '@wordpress/i18n';
 import { useBlockProps } from '@wordpress/block-editor';
-//import { useSelect, useDispatch } from '@wordpress/data';
+import { useSelect } from '@wordpress/data';
 import './editor.scss';
 
 export default function Edit() {
-	/* const title = useSelect( ( select ) => {
-		return select( 'core/editor' ).getEditedPostAttribute( 'title' );
+	const data = useSelect( ( select ) => {
+		const store = select( 'blocks-u/todos' );
+		if ( ! store ) return null;
+		return {
+			total: store.getTodosNumber(),
+			done: store.getDoneTodos(),
+			undone: store.getUnDoneTodos(),
+		};
 	} );
-	const { editPost } = useDispatch( 'core/editor' ); */
-	return <div { ...useBlockProps() }>Todo list Info</div>;
+	return (
+		<div { ...useBlockProps() }>
+			{ ! data && (
+				<p>
+					{ __(
+						'Please make sure the plugin is active.',
+						'todo-list-info'
+					) }
+				</p>
+			) }
+			{ data && (
+				<ul>
+					<li>
+						{ __( 'Done:', 'todo-list-info' ) } { data.done }
+					</li>
+					<li>
+						{ __( 'Un-Done:', 'todo-list-info' ) } { data.undone }
+					</li>
+					<li>
+						{ __( 'Total:', 'todo-list-info' ) } { data.total }
+					</li>
+				</ul>
+			) }
+		</div>
+	);
 }
